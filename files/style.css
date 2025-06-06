@@ -64,7 +64,7 @@ body {
 
 .navbar a:hover {
     color: #0ef;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /*home*/
