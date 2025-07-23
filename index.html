@@ -346,6 +346,71 @@
                     <!--cards -->
                     <div class="card reveal">
                         <div class="image">
+                            <img src="./img/eperum.png">
+                        </div>
+                        <div class="title">
+                            <h1>E-Perumahan</h1>
+                        </div>
+                        <div class="des">
+                            <p class="shortText">
+                                E-Perumahan is a web-based platform designed to simplify residential community management. It ...
+                                <a href="#" class="readMore" style="color: #0ef;">Read more</a>
+                            </p>
+                            <p class="fullText" style="display: none;">
+                                E-Perumahan is a web-based platform designed to simplify residential community management. It offers key features such as resident data management, monthly contribution tracking, and financial reporting. Administrators can easily maintain up-to-date resident profiles, monitor payments, and generate transparent financial summaries. With a user-friendly interface, E-Perumahan helps housing communities stay organized, accountable, and efficient in their daily operations.
+                                <a href="#" class="readLess" style="color: #0ef;"> Read less</a>
+                            </p>
+                            <div class="tech">
+                                <img alt="Python logo" class="skill-icon" src="./img/logos/PHP.png"/>
+                                <span>
+                                PHP
+                                </span>
+                            </div>
+                            <div class="tech">
+                                <img alt="Python logo" class="skill-icon" src="./img/logos/js.png"/>
+                                <span>
+                                JS
+                                </span>
+                            </div>
+                            <div class="tech">
+                                <img alt="Python logo" class="skill-icon" src="./img/logos/mysql.png"/>
+                                <span>
+                                MySQL
+                                </span>
+                            </div>
+                            <a class="code" href="https://github.com/Alwyal/e-perumahanV2" target="_blank">View Code</a>
+                        </div>
+
+                        <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const cards = document.querySelectorAll(".card");
+
+                            cards.forEach((card) => {
+                                const readMore = card.querySelector(".readMore");
+                                const readLess = card.querySelector(".readLess");
+                                const shortText = card.querySelector(".shortText");
+                                const fullText = card.querySelector(".fullText");
+
+                                readMore.addEventListener("click", function (e) {
+                                    e.preventDefault();
+                                    shortText.style.display = "none";
+                                    fullText.style.display = "block";
+                                });
+
+                                readLess.addEventListener("click", function (e) {
+                                    e.preventDefault();
+                                    shortText.style.display = "block";
+                                    fullText.style.display = "none";
+                                });
+                            });
+                        });
+                        </script>
+                    </div>
+                    <!--cards -->
+
+                    <!--cards -->
+                    <div class="card reveal">
+                        <div class="image">
                             <img src="./img/IAC.jpg">
                         </div>
                         <div class="title">
